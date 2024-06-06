@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tailwind</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body class="bg-gradient-to-r from-black to-blue-600">
         <section class="text-white grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -15,8 +16,23 @@
                 </button>
             </div>
             <div>
-                <img class="w-full" src="./img/pintura-lago-montana-montana-al-fondo.jpg" alt="Fondo de montaña">
+                <img class="w-full" src="./img/pintura-lago-montana-montana-al-fondo.jpg" alt="Fondo de montaña" data-aos="zoom-in">
             </div>
         </section>
     </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html> 
+
+<!--
+  Realizar tu portafolio personal con Tailwind CSS,
+  El portafolio debe contener:
+  - Un header con tu nombre y una imagen tuya
+  - Una sección de "Sobre mi" con una descripción tuya
+  - Una sección de "Habilidades" con tus habilidades
+  - Una sección de "Proyectos" con tus proyectos
+  - Un footer con tus redes sociales
+  Fecha de entrega: 27/05/24
+-->
