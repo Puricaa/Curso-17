@@ -219,13 +219,13 @@ condicional = !(!(5 > 3)); // false
 
 // (Facil)
 var uno = !true || false; // false
-var dos = false && ! false;
-var tres = true && ! false;
+var dos = false && ! false; // false
+var tres = true && ! false; // true
 
 //(Medio)
-var cuatro = (5 === 5) || (true);
-var cinco = (!0) || (5 > 0);
-var seis = (3 > 4) && (!0);
+var cuatro = (5 === 5) || (true); // true
+var cinco = (!0) || (5 < 0); // false
+var seis = (3 > 4) && (!0); // false
 
 //Avanzado
 var siete = ( ((false || true) && (!false && true) )) || (true && false) //true
@@ -241,3 +241,66 @@ var doce = !( true && (!true === !( !(16 === (4*2) + 8))) ) !== (false); //true
 
  //Leyenda
 var trece = !(((!(!(10 / 5 == "2") === false) != false) === ((5 * 5) <= (100 / 4))) && (!((1 + 1) !== (10 / 5)) !== (true)));
+
+// Operadores aritméticos
+/*
+    Los operadores aritméticos son utilizados para realizar operaciones matemáticas.
+*/
+
+var suma = 5 + 3; // 8
+/*
+    Lista de operadores aritméticos
+    + Suma
+    - Resta
+    * Multiplicación
+    ** Exponenciación
+    / División
+    % Módulo
+    ++ Incremento
+    -- Decremento
+    = Asignación 
+    =+ Suma y asignación
+    =- Resta y asignación 
+    =* Multiplicación y asignación 
+    =/ División y asignación
+    =% Módulo y asignación
+*/
+
+var Exponenciación = 5 ** 3; // 125 (5x5x5)
+var residuo = 40 % 8; // 0
+/* Ejemplo.
+    4// = 2
+    4%2 = 0
+    5/2 = 2.5
+    5%2 = 1
+*/
+var incremento = 5;
+incremento++; // 6
+incremento--; // 5
+
+var asignación = 5;
+asignación += 3; // 8 (asiganción + asignación + 3)
+asignación -= 3; // 8 (asiganción + asignación - 3)
+asignación *= 3; // 8 (asiganción + asignación * 3)
+asignación /= 3; // 8 (asiganción + asignación / 3)
+asignación %= 3; // 8 (asiganción + asignación % 3)
+
+// Condicionales 
+/*
+    Los condicionales son utilizados para tomar decisiones en base a una condición.
+*/
+var condicion = 5 > 3;
+if (condicion) {
+    console.log('5 es mayor que 3');
+} else {
+    console.log('5 no es mayor que 3');
+}
+
+var tiempo = true;
+var dinero = true;
+if (tiempo && dinero) {
+    console.log('Vamos al cine'); //(se imprime)
+} else {
+    console.log('No vamos al cine');
+}
+
