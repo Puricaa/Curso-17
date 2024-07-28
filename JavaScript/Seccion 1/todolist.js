@@ -2,7 +2,7 @@ var menu = "Bienvenido a la lista de tareas\n1. Agregar tarea\n2. Eliminar tarea
 var tareas = [];
 var opcion = 0;
 
-white (true) {
+while (true) {
     opcion = prompt(menu);
     if (opcion === "1") {
         var tarea = prompt("Escribe la tarea");
