@@ -6,14 +6,20 @@ selecciona todas y absolutamente todas las etiquetas*/
 }
 
 p {
-  /*
-  background-color: cornflowerblue;
-  background-color: rgb(25, 65, 208);
-  background-color: #21a04b;
-  background-color: hsl(0, 100%, 50%);
-  background-color: rgba(100, 148, 237, 0.79);
+  /* 
+    background-color: es la propiedad que especifica el color de fondo de nuestro elemento
+  */
+  /* 
+    Tipos de Código de colores.
+    background-color: cornflowerblue;
+    background-color: rgb(25, 65, 208);
+    background-color: #21a04b;
+    background-color: hsl(0, 100%, 50%);
+    background-color: rgba(100, 148, 237, 0.79);
   */
   background-color: #155adba3;
+
+  /* font-size: es la propiedad que establece el tamaño del texto */
   font-size: 0.8rem;
   font-weight: 900;
   /*
@@ -95,7 +101,7 @@ p::before{
 }
 
 body{
-  background-image: url("https://www.elsoldetijuana.com.mx/incoming/7h4hk6-kesikesiperrito.jpg/alternates/LANDSCAPE_768/Kesikesiperrito.jpg");
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230825/pngtree-fantasy-landscape-with-mountains-and-clouds-in-the-sky-digital-illustration-image_13246435.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /*background-position: center*/;
