@@ -3,15 +3,15 @@ console.log('Hola desde Index.js');
 // Comentario de una sola linea
 
 /*
-    comentario de 
-    multiples lineas
+  comentario de 
+  multiples lineas
 */
 
 
 // Variables
 /*
-    Una variable es un espacio en memoria que se reserva para almacenar un valor
-    y que puede ser modificado en cualquier momento.
+  Una variable es un espacio en memoria que se reserva para almacenar un valor
+  y que puede ser modificado en cualquier momento.
 */
 
 // Declarición de variables.
@@ -21,8 +21,8 @@ console.log(nombre);
 
 //Tipos de datos.
 /*
-    Los tipos de datos son los diferentes formas en las en las que se pueden representar
-    los valores en JavaScript.
+  Los tipos de datos son los diferentes formas en las en las que se pueden representar
+  los valores en JavaScript.
 */
 nombre = 'Mercedes'; //String
 console.log(nombre);
@@ -39,22 +39,22 @@ console.log(nulo);
 
 // Objeto
 var persona = {
-    nombre: 'Anderson',
-    edad: 23,
-    tieneTrabajo: true
+  nombre: 'Anderson',
+  edad: 23,
+  tieneTrabajo: true
 };
 
 console.log(persona, persona.nombre, persona.edad, persona.tieneTrabajo);
 
 persona = {
-    nombre: 'Anderson',
-    edad: 23,
-    tieneTrabajo: true,
-    mascota: {
-        nombre: 'Firulais',
-        edad: 3,
-        tipo: 'perro',
-    }
+  nombre: 'Anderson',
+  edad: 23,
+  tieneTrabajo: true,
+  mascota: {
+    nombre: 'Firulais',
+    edad: 3,
+    tipo: 'perro',
+  }
 };
 
 // Accceder al nombre de la mascota
@@ -66,11 +66,11 @@ console.log(frutas);
 console.log(frutas[0]); // Manzana
 
 var compras = [
-    ['Manzana', 2],
-    ['Pera', 3],
-    ['Uva', 1],
-    ['Sandia', 1],
-    [{nombre: 'Papaya', precio: 50}, 2]
+  ['Manzana', 2],
+  ['Pera', 3],
+  ['Uva', 1],
+  ['Sandia', 1],
+  [{nombre: 'Papaya', precio: 50}, 2]
 ];
 
 console.log(compras[1][0]); // Pera
@@ -78,46 +78,46 @@ console.log(compras[1][0]); // Pera
 console.log(compras[4][0]['nombre']); // Papaya
 
 /* Ejercicios de tipos de datos
-    segun el siguiente objeto
+  segun el siguiente objeto
 
-    var compras = {
-    frutas: [
-    {
-        nombre: 'Manzana',
-        tipos: ['Roja', 'Verde'],
-        cantidad: 2,
-        precio: 5
-    },
-    {
-        nombre: 'Pera',
-        cantidad: 3,
-        precio: 6
-    },
-    {
-        nombre: 'Uva',
-        tipos: ['Verde', 'Morada'],
-        cantidad: 1,
-        precio: 10
-    },
-    {
-        nombre: 'Sandia',
-        cantidad: 1,
-        precio: 20
-        tamaños: ['Grande', 'Mediana', 'Pequeña']
-    }
-    ],
-    charcuteria: [
-    {
-        nombre: 'Jamón',
-        cantidad: 1,
-        precio: 100
-    },
-    {
-        nombre: 'Salchichón',
-        cantidad: 2,
-        precio: 50
-    }
-    ]
+  var compras = {
+  frutas: [
+  {
+    nombre: 'Manzana',
+    tipos: ['Roja', 'Verde'],
+    cantidad: 2,
+    precio: 5
+  },
+  {
+    nombre: 'Pera',
+    cantidad: 3,
+    precio: 6
+  },
+  {
+    nombre: 'Uva',
+    tipos: ['Verde', 'Morada'],
+    cantidad: 1,
+    precio: 10
+  },
+  {
+    nombre: 'Sandia',
+    cantidad: 1,
+    precio: 20
+    tamaños: ['Grande', 'Mediana', 'Pequeña']
+  }
+  ],
+  charcuteria: [
+  {
+    nombre: 'Jamón',
+    cantidad: 1,
+    precio: 100
+  },
+  {
+    nombre: 'Salchichón',
+    cantidad: 2,
+    precio: 50
+  }
+  ]
 }
 
 imprimir en consola:
@@ -133,43 +133,43 @@ opcional:
 */
 
 var compras = {
-    frutas: [
-    {
-        nombre: 'Manzana',
-        tipos: ['Roja', 'Verde'],
-        cantidad: 2,
-        precio: 5
-    },
-    {
-        nombre: 'Pera',
-        cantidad: 3,
-        precio: 6
-    },
-    {
-        nombre: 'Uva',
-        tipos: ['Verde', 'Morada'],
-        cantidad: 1,
-        precio: 10
-    },
-    {
-        nombre: 'Sandia',
-        cantidad: 1,
-        precio: 20,
-        tamaños: ['Grande', 'Mediana', 'Pequeña']
-    }
-    ],
-    charcuteria: [
-    {
-        nombre: 'Jamón',
-        cantidad: 1,
-        precio: 100
-    },
-    {
-        nombre: 'Salchichón',
-        cantidad: 2,
-        precio: 50
-    }
-    ]
+  frutas: [
+  {
+    nombre: 'Manzana',
+    tipos: ['Roja', 'Verde'],
+    cantidad: 2,
+    precio: 5
+  },
+  {
+    nombre: 'Pera',
+    cantidad: 3,
+    precio: 6
+  },
+  {
+    nombre: 'Uva',
+    tipos: ['Verde', 'Morada'],
+    cantidad: 1,
+    precio: 10
+  },
+  {
+    nombre: 'Sandia',
+    cantidad: 1,
+    precio: 20,
+    tamaños: ['Grande', 'Mediana', 'Pequeña']
+  }
+  ],
+  charcuteria: [
+  {
+    nombre: 'Jamón',
+    cantidad: 1,
+    precio: 100
+  },
+  {
+    nombre: 'Salchichón',
+    cantidad: 2,
+    precio: 50
+  }
+  ]
 }
 
 console.log(compras.frutas[1].nombre); // Pera
@@ -184,8 +184,8 @@ console.log((compras.frutas[0].precio * compras.frutas[0].cantidad) + (compras.f
 
 // Operadores comparativos
 /*
-    Los operadores comparativo son utilizados para comparar dos valores y 
-    devolver un valor booleano.
+  Los operadores comparativo son utilizados para comparar dos valores y 
+  devolver un valor booleano.
 */
 
 var condicional = 5 == '5'; // true
@@ -201,14 +201,14 @@ var condicional = 5 == '5'; // true
 
 // Operadores lógicos
 /*
-    Los operadores lógicos son utilizados para combinar dos o más valores
-    booleanos y devolver un valor booleano.
+  Los operadores lógicos son utilizados para combinar dos o más valores
+  booleanos y devolver un valor booleano.
 */
 /*
-    Lista de operadores lógicos 
-    && AND (Y)
-    || OR (O)
-    ! NOT (NO)
+  Lista de operadores lógicos 
+  && AND (Y)
+  || OR (O)
+  ! NOT (NO)
 */
 
 condicional = 5 > 3 && 3 < 2; // false
@@ -239,40 +239,40 @@ var once = !(true && (!true === ! (!(8 === 4*2) )) ); //true
 //Ultra-Hardcore
 var doce = !( true && (!true === !( !(16 === (4*2) + 8))) ) !== (false); //true
 
- //Leyenda
+//Leyenda
 var trece = !(((!(!(10 / 5 == "2") === false) != false) === ((5 * 5) <= (100 / 4))) && (!((1 + 1) !== (10 / 5)) !== (true)));
 
 // Operadores aritméticos
 /*
-    Los operadores aritméticos son utilizados para realizar operaciones matemáticas.
+  Los operadores aritméticos son utilizados para realizar operaciones matemáticas.
 */
 
 var suma = 5 + 3; // 8
 /*
-    Lista de operadores aritméticos
-    + Suma
-    - Resta
-    * Multiplicación
-    ** Exponenciación
-    / División
-    % Módulo
-    ++ Incremento
-    -- Decremento
-    = Asignación 
-    =+ Suma y asignación
-    =- Resta y asignación 
-    =* Multiplicación y asignación 
-    =/ División y asignación
-    =% Módulo y asignación
+  Lista de operadores aritméticos
+  + Suma
+  - Resta
+  * Multiplicación
+  ** Exponenciación
+  / División
+  % Módulo
+  ++ Incremento
+  -- Decremento
+  = Asignación 
+  =+ Suma y asignación
+  =- Resta y asignación 
+  =* Multiplicación y asignación 
+  =/ División y asignación
+  =% Módulo y asignación
 */
 
 var Exponenciación = 5 ** 3; // 125 (5x5x5)
 var residuo = 40 % 8; // 0
 /* Ejemplo.
-    4// = 2
-    4%2 = 0
-    5/2 = 2.5
-    5%2 = 1
+  4// = 2
+  4%2 = 0
+  5/2 = 2.5
+  5%2 = 1
 */
 var incremento = 5;
 incremento++; // 6
@@ -287,29 +287,29 @@ asignación %= 3; // 8 (asiganción + asignación % 3)
 
 // Condicionales 
 /*
-    Los condicionales son utilizados para tomar decisiones en base a una condición.
+  Los condicionales son utilizados para tomar decisiones en base a una condición.
 */
 var condicion = 5 > 3;
 if (condicion) {
-    console.log('5 es mayor que 3');
+  console.log('5 es mayor que 3');
 } else {
-    console.log('5 no es mayor que 3');
+  console.log('5 no es mayor que 3');
 }
 
 var tiempo = true;
 var dinero = true;
 if (tiempo && dinero) {
-    console.log('Vamos al cine'); //(se imprime)
+  console.log('Vamos al cine'); //(se imprime)
 } else {
-    console.log('No vamos al cine');
+  console.log('No vamos al cine');
 }
 
- /*
-    Ejercicios de la seccion_1
-    1) Realizar un programa que permita determinar si un numero es par o impar
-    2) Realiza un piedra papel o tijera en donde dos jugadores ingresen su opcion y se determine quien gana
-    3) Realiza un programa que funcione como un semaforo, en donde se pueda ingresar un color y se muestre un mensaje dependiendo del color, si es verde imprima "Continua", amarillo imprima "despacio" o rojo "detente", sino es ninguno imprima "error"
-    4) Realiza una calculadora que permita realizar las operaciones basicas (suma, resta, multiplicacion y division) con dos numeros, debe preguntarte el numero1, el numero2 y la operacion que deseas realizar
+/*
+  Ejercicios de la seccion_1
+  1) Realizar un programa que permita determinar si un numero es par o impar
+  2) Realiza un piedra papel o tijera en donde dos jugadores ingresen su opcion y se determine quien gana
+  3) Realiza un programa que funcione como un semaforo, en donde se pueda ingresar un color y se muestre un mensaje dependiendo del color, si es verde imprima "Continua", amarillo imprima "despacio" o rojo "detente", sino es ninguno imprima "error"
+  4) Realiza una calculadora que permita realizar las operaciones basicas (suma, resta, multiplicacion y division) con dos numeros, debe preguntarte el numero1, el numero2 y la operacion que deseas realizar
 
-    fecha de entrega: 06/05/24
-    */
+  fecha de entrega: 06/05/24
+*/

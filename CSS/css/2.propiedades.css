@@ -1,4 +1,5 @@
-/*Selector universal*/
+/*Selector universal:
+selecciona todas y absolutamente todas las etiquetas*/
 * {
   color:brown!important;
   font-family: "Montserrat", sans-serif;
