@@ -1,7 +1,7 @@
 /*Selector universal:
 selecciona todas y absolutamente todas las etiquetas*/
 * {
-  color:brown!important;
+  color:white!important;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -22,40 +22,52 @@ p {
   /* font-size: es la propiedad que establece el tamaño del texto */
   font-size: 0.8rem;
   font-weight: 900;
+
   /*
-  border-width: 20px;
-  border-color: black;
-  border-style: double;
-  border: 1px solid black;
+    border: Son las propiedades que permiten especificar el estilo, ancho y color del borde de un elemento. */
+  /*
+    border-width: 20px;
+    border-color: black;
+    border-style: double;
+    border: 1px solid black;
   */
-  border-top: 1px solid black;
-  border-bottom: 1px solid red;
-  border-left: 1px solid green;
-  border-right: 1px solid green;
+  border-top: 1px solid black; /*Arriba*/
+  border-bottom: 1px solid red; /*Abajo*/
+  border-left: 1px solid green; /*Derecha*/
+  border-right: 1px solid green; /*Izquierda*/
   border-radius: 35px;
   width: 50%;
   height: 25px;
+
   /*
-  Distancia entre un elemento y otro
-  margin: 50px;
-  margin-bottom: 30px;
-  Valores en el sentido de las agujas del reloj
-  margin: 30px 0 30px 20px;
+    margin: se utilizan para crear espacio alrededor de los elementos,
+    fuera de los bordes definidos.
+  */
+  /* 
+    margin-Lados individuales
+    margin-top: 20px;
+    mergin-right: 20px;
+    margin-bottom: 20px;
+    mergin-left: 20px;
+
+    Los valores se utilizan en el sentido de las agujas del reloj
+    margin: 30px 0 30px 20px;
   */
   margin: 30px 0 30px 20px;
+
   /*
-    Distancia del contenido con respecto al borde
-    padding: 20px;
+    padding: Se utiliza para crear espacio alrededor del contenido de un elemento,
+    dentro de los bordes definidos.
   */
   padding: 20px 0 20px;
-  outline: 2px solid green;
-  text-align: center;
-  text-decoration: underline green double 5px;
-  text-transform: capitalize;
-  letter-spacing: 5px;
+  outline: 2px solid red; /* outline: Es una línea dibujada fuera del borde del elemento. */
+  text-align: center; /* text-align: La propiedad se utiliza para establecer la alineación horizontal de un texto. */
+  text-decoration: underline green double 5px; /* text-decoration: La propiedad se utiliza para establecer una decoración a un texto*/
+  text-transform: capitalize; /* text-transform: La propiedad se utiliza para especificar letras mayúsculas y minúsculas en un texto. */
+  letter-spacing: 5px; /* letter-spacing: La propiedad se utiliza para especificar el espacio entre los caracteres de un texto. */
   word-spacing: 12px;
   line-height: 20px;
-  text-shadow: 10px -5px 2px black;
+  text-shadow: 10px -5px 2px black; /* text-shadow: La propiedad agrega sombra al texto. */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -85,19 +97,19 @@ a:active{
 */
 
 p::first-letter{
-  font-size: 35px;
+  font-size: 30px;
 }
 
 p::first-line{
-  color:chocolate;
+  color: white;
 }
 
 p::after{
-  content:"Adios";
+  content:"";
 }
 
 p::before{
-  content:"Hola";
+  content:"";
 }
 
 body{
