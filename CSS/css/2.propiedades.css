@@ -65,14 +65,24 @@ p {
   text-decoration: underline green double 5px; /* text-decoration: La propiedad se utiliza para establecer una decoración a un texto*/
   text-transform: capitalize; /* text-transform: La propiedad se utiliza para especificar letras mayúsculas y minúsculas en un texto. */
   letter-spacing: 5px; /* letter-spacing: La propiedad se utiliza para especificar el espacio entre los caracteres de un texto. */
-  word-spacing: 12px;
-  line-height: 20px;
+  word-spacing: 12px; /* word-spacing: La propiedad se utiliza para especificar el espacio entre las palabras en un texto. */
+  line-height: 20px; /* line-height: La propiedad se utiliza para especificar el espacio entre líneas. */
   text-shadow: 10px -5px 2px black; /* text-shadow: La propiedad agrega sombra al texto. */
   font-family: "Montserrat", sans-serif;
 }
 
+
+/*Una pseudoclase se utiliza para definir un estado especial de un elemento.
+
+Por ejemplo, se puede utilizar para:
+
+Aplicar estilo a un elemento cuando un usuario pasa el ratón por encima de él
+Estilizar los enlaces visitados y no visitados de manera diferente
+Aplicar estilo a un elemento cuando se le da el foco*/
+
+/* Color de fondo cuando el mouse paso sobre un elemento */
 p:hover{
-  background-color: purple;
+  background-color: red;
 }
 /*
 Pseudo Clases
@@ -80,7 +90,7 @@ Manejan un estado de los elementos html
 */
 /*Color cuando ya visite el link*/
 a:visited{
-  color: aquamarine;
+  color: yellow;
 }
 /*Color cuando no he visitado el link*/
 a:link{
@@ -88,7 +98,7 @@ a:link{
 }
 /*Color cuando doy click en el link*/
 a:active{
-  color: cadetblue;
+  color: black;
 }
 
 /*
