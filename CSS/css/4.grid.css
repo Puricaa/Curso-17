@@ -1,6 +1,8 @@
 :root{
   --main-color-text: white
 }
+body {
+  background-image: linear-gradient(to right, red, yellow, green);}
 
 section {
   display: grid;
@@ -16,11 +18,15 @@ section div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: background-color 5s, color 2s;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+  background-color: rgb(8, 8, 173);
+  transition: background-color 3s, color 1s;
 }
 
 section div:hover {
-  background-color: darkblue;
+  background-color: red;
   color: var(--main-color-text);
 }
 
