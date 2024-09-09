@@ -2,7 +2,7 @@
   --main-color-text: white
 }
 body {
-  background-image: linear-gradient(to right, red, yellow, green);}
+  background: linear-gradient(to right, red, yellow, green);}
 
 section {
   display: grid;
@@ -21,6 +21,7 @@ section div {
   align-items: center;
   width: 50%;
   height: 100px;
+  border-radius: 20px;
   background-color: rgb(8, 8, 173);
   transition: background-color 3s, color 1s;
 }
