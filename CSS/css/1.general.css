@@ -3,17 +3,22 @@
 #destacado {
   color: blue;
 }
+
 /*Clase*/
 .subtitulo {
   color: green;
 }
+
 /*Etiqueta HTML*/
 p {
   color: red;
 }
-.articulo h2{
+
+.articulo h2 {
   color: purple;
 }
-.articulo p{
+
+.articulo p {
   color: brown;
 }
+
