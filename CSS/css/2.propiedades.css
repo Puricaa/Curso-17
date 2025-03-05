@@ -1,4 +1,4 @@
-/*Selector universal:
+/*Selector universal (*):
 selecciona todas y absolutamente todas las etiquetas*/
 * {
   color:white!important;
@@ -19,8 +19,9 @@ p {
   */
   background-color: #155adba3;
 
-  /* font-size: es la propiedad que establece el tamaño del texto */
+  /* font-size: es la propiedad que establece el tamaño de la tipografia */
   font-size: 0.8rem;
+  /* font-weight: establece el grosor del texto. */
   font-weight: 900;
 
   /*

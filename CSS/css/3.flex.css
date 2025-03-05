@@ -5,10 +5,8 @@
 
 .fila{
   display: flex;
-  /*Eje primario*/
-  justify-content:space-between;
-  /*Eje secundario*/
-  align-items: center;
+  justify-content:space-between; /*Eje primario*/
+  align-items: center; /*Eje secundario*/
   gap: 20px;
 }
 
