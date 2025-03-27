@@ -8,10 +8,8 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  /*Horizontal*/
-  justify-items: center;
-  /*Vertical*/
-  align-content: center;
+  justify-items: center; /*Horizontal*/
+  align-content: center; /*Vertical*/
 }
 
 section div {
