@@ -215,7 +215,7 @@ condicional = 5 > 3 && 3 < 2; // false
 condicional = 5 > 3 || 3 < 2; // true
 condicional = !(!(5 > 3)); // false
 
-/* ----- ACTIVADAD PARA REALIZAR EN CLASE ----- */
+/* ----- ACTIVIDAD PARA REALIZAR EN CLASE ----- */
 
 // (Facil)
 var uno = !true || false; // false

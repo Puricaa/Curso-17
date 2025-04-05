@@ -3,16 +3,16 @@ var tareas = [];
 var opcion = 0;
 
 while (true) {
-    opcion = prompt(menu);
-    if (opcion === "1") {
-        var tarea = prompt("Escribe la tarea");
-        tareas.push(tarea);
-        alert("Tarea agregada");
-    } else if (opcion === "2") {
-        var indice = prompt("Escribe el número de la tarea que desea eliminar");
-        tareas.splice(indice, 1);
-        alert("Tarea eliminada");
-    } else if (opcion === "3") {
-        alert(tareas);
-    }
+	opcion = prompt(menu);
+	if (opcion === "1") {
+		var tarea = prompt("Escribe la tarea");
+		tareas.push(tarea);
+		alert("Tarea agregada");
+	} else if (opcion === "2") {
+		var indice = prompt("Escribe el número de la tarea que desea eliminar");
+		tareas.splice(indice, 1);
+		alert("Tarea eliminada");
+	} else if (opcion === "3") {
+		alert(tareas);
+	}
 }

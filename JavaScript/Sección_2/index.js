@@ -6,16 +6,16 @@ en cualquier parte de nuestro programa.
 
 // Declaración de una función
 function miFuncion() {
-    console.log('Hola mundo');
+	console.log('Hola mundo');
 }
 
 // Llamado de una función
 miFuncion();
 miFuncion();
 
-  // Funciones con parámetros
+// Funciones con parámetros
 function saludar(nombre = 'Desconocido') {
-    console.log('Hola ' + nombre);
+	console.log('Hola ' + nombre);
 }
 
 saludar('Juan');
@@ -23,7 +23,7 @@ saludar('Carlos');
 saludar();
 
 function sumar(a = 0, b = 0, c = 0) {
-    console.log(a + b + c);
+	console.log(a + b + c);
 }
 
 sumar(5, 3);
@@ -31,7 +31,7 @@ sumar(0, 20);
 
 // Funciones que retornan un valor
 function sumar_con_retorno(a, b) {
-    return a + b;
+	return a + b;
 }
 console.log(sumar(5, 3));
 //console.log(undefined)
@@ -39,7 +39,7 @@ console.log(sumar_con_retorno(5, 3));
 //console.log(8)
 
 /*
-    Otros ejemplos
+	Otros ejemplos
 */
 var sumatoria = sumar(5,5)
 console.log(sumatoria)
@@ -47,8 +47,8 @@ sumatoria = sumar_con_retorno(12,'5')
 console.log(sumatoria)
 
 /*
-    Scope (Alcance)
-    El scope es el alcance que tienen las variables en JavaScript.
+	Scope (Alcance)
+	El scope es el alcance que tienen las variables en JavaScript.
 */
 
 // Variables globales
@@ -59,24 +59,24 @@ let apellido = 'Perez';
 const PI = 3.1416;
 
 if(true) {
-    //var apellido = 'Gomez';
+	//var apellido = 'Gomez';
 }
 console.log(apellido);
 
 if(true){
-    let saludo = 'Hola';
-    if(true){
-    console.log(saludo);
-    }
+	let saludo = 'Hola';
+	if(true){
+	console.log(saludo);
+	}
 }
 
 /*
-    Hoisting
-    El hoisting es un comportamiento de JavaScript que mueve las declaraciones
-    al inicio de su contexto.
+	Hoisting
+	El hoisting es un comportamiento de JavaScript que mueve las declaraciones
+	al inicio de su contexto.
 */
-    console.log(miNombre);
-    var miNombre = 'Juan';
+	console.log(miNombre);
+	var miNombre = 'Juan';
 
 /*
 Ejercicios de funciones
