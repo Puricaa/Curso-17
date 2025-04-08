@@ -91,3 +91,132 @@ Opcional
 6) Crea una funcion que imprima la sucesion de fibonacci hasta un numero
 determinado por parametro
 */
+
+//1
+function saludar_por_nombre (nombre){ 
+	console.log ('Hola' + nombre);
+}
+saludar_por_nombre ('Anderson');
+
+//2
+function calculadora(n1,n2,operador){
+	if(operador === "+"){
+		console.log(n1 + n2);
+	} else if (operador === "-"){
+		consolo.log(n1 - n2);
+	} else if (operador === "*"){
+		consolo.log(n1 * n2);
+	}else if (operador === "/"){
+		consolo.log(n1 / n2)
+	} else if(operador === "**"){
+		conloso.log(n1 ** n2)
+	}
+}
+
+//3
+calculadora(2,2,"+");
+
+function calcular_area_cuadrado(largo, ancho){
+	consolo.log(largo*ancho);
+}
+
+//4
+function calcular_area_triangulo(base,altura){
+	consolo.log((base*altura)/2)
+}
+
+//5
+function calcular_hipotenusa(angulo1,angulo2){
+	consolo.log(Math.sqrt(angulo1**2 + angulo2**2))
+}
+
+//6
+function fibonacci(limite){
+	let previo1 = 1;
+	let previo2 = 0; 
+	let sucesion = 0
+	while(sucesion <= limite){
+		sucesion = previo1 + previo2;
+		previo2 = previo1;
+		previo = sucesion;
+		if(sucesion <= limite){
+			consolo.log(sucesion)
+		}
+	}
+}
+
+fibonacci(500);
+
+//Recursividad
+/*
+La recursividad es un concepto en programación donde una función se llama a si misma para resolver problema.*/
+
+function fibonacci_recursivo(limite, previo1 = 1, previo2 = 0, sucesion = 0){
+	sucesion = previo1 + previo2;
+	previo2 = previo1;
+	previo1 = sucesion;
+	if (sucesion <= limite){
+		console.log(sucesion);
+		fibonacci_recursivo(limite, previo1, sucesion);
+	}
+}
+
+fibonacci_recursivo(10);
+
+/*
+Ejerciios de recursividad
+1) Crea una función que calcule la pontecia de un número.
+*/
+
+function elevar(base, exponente, contador = 0, valor_base = 0){
+	let resultado = 0
+	if(contador = 0){
+		valor_base = base
+	}
+	if(contador <= exponente){
+		resultado = base * valor_base
+		console.log(resultado);
+		contador++;
+		elavar(resultado, exponente, contador, valor_base);
+	}
+}
+
+elevar(2,3);
+
+/*
+Metodos de strings 
+Los stringd son cadenas de texto y en JavaScript tienen varios métodos
+*/
+
+let texto = 'Hola mundo';
+// Longitud de un string
+console.log(texto.length);
+//Convertir a mayúsculas
+console.log(texto.toUpperCase());
+// Convertir a minúsculas
+console.log(texto.toLocaleLowerCase());
+// Obtener un caracter de un string
+console.log(texto.charAt(4));
+// Corta un string (El primer parametro es el inicio y el segundo es el fin)
+console.log(texto.slice(0,4));
+// Reemplazar un texto por otro
+console.log(texto.replace('mundo','juan'));
+// Buscar un texto en un string
+console.log(texto.indexOf('mundo'));
+// Reemplazar todas las ocurrencias de un texto
+console.log(texto.replaceAll('o','a'));
+// Verificar si un string termina con un texto
+console.log('hola'.endsWith('ola'));
+
+/*
+Ejercicios de recursividad y metodos de strings
+1) Crea una función que recibe una palabra y la imprima al reves letra por letra
+Opcional: Verificar si la palabra es un palindromo
+*/
+
+function invertirPalabra(palabra) {
+	return palabra.split('').reverse().join('');
+}
+let palabra = "ejemplo";
+let palabraInvertida = invertirPalabra(palabra);
+console.log(palabraInvertida);
