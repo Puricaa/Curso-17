@@ -217,6 +217,132 @@ Opcional: Verificar si la palabra es un palindromo
 function invertirPalabra(palabra) {
 	return palabra.split('').reverse().join('');
 }
-let palabra = "ejemplo";
+let palabra = "Anderson";
 let palabraInvertida = invertirPalabra(palabra);
 console.log(palabraInvertida);
+
+/*
+	Arrays y los metodos de array
+	Los arrays son listas de elementos y en Javascript tienen varios metodos
+*/
+
+let frutas = ['Manzana','Pera','Uva','Sandia'];
+
+// Longitud de un array
+console.log(frutas.length);
+
+// Agregar un elemento al final del array
+frutas.push('Fresa');
+console.log(frutas);
+
+// Eliminar el ultimo elemento del array
+frutas.pop();
+console.log(frutas);
+
+// Agregar un elemento al inicio del array
+frutas.unshift('Fresa');
+console.log(frutas);
+
+// Eliminar el primer elemento del array
+frutas.shift();
+console.log(frutas);
+
+// Obtener un subarray de un array
+console.log(frutas.slice(1,3));
+
+// Reemplazar un elemento de un array
+frutas[1] = 'Mango';
+console.log(frutas);
+
+// Encontrar el indice de un elemento de un array
+console.log(frutas.indexOf('Mango'));
+
+// Eliminar elementos de un array
+frutas.splice(1,2);
+console.log(frutas);
+
+//Unir dos array
+let frutas2 = ['Pera','Uva'];
+console.log(frutas.concat(frutas2));
+
+// Invertir array
+console.log(frutas.reverse);
+
+// Ordenar array
+console.log(frutas.sort());
+
+/*
+	Ejerccios de arrays
+	1) Crea una función que reciba un array de numeros y los sume
+	2) Crea una función que reciba en array de numeros y devuelva el mayor 
+	3) Crea una función que reciba dos arrays u compare si son iguales
+*/
+
+// 1
+let numeros = [1,2,3,4,5];
+
+function sumar_array(numeros, suma = 0, contador = 0){
+	if(contador < numeros.length){
+		suma += numeros[contador];
+		contador++;
+		sumar_array(numeros, suma, contador);
+	} else {
+		console.log(suma);
+	}
+}
+
+sumar_array(numeros_array,1,1);
+
+//2
+function mayor_array(numeros, mayor = 0, contador = 0){
+	if(contador < numeros.length){
+		if(numeros[contador] > mayor){
+			mayor = numeros[contador];
+		}
+		contador++;
+		mayor_array(numeros, mayor,contador);
+	} else {
+		console.log(mayor);
+	}
+}
+
+mayor_array(numeros_array);
+
+//3
+let numeros_array2 = [1,5,3,2,6];
+let numeros_array3 = [1,5,3,2,6];
+
+function comparar_arrays(array1, array2, contador = 0){
+	if(array1 === array2){
+		console.log('Los arrays son iguales');
+	} else{
+		console.log('Los arrays no son iguales')
+	}
+}
+
+comparar_arrays(numeros_array2, numeros_array3);
+
+
+/*
+	Objetos
+	Los objetos son colecciones de propiedades y métodos.
+	Propiedades: Son variables dentro del objeto. (Cosas que lo describen)
+	Métodos: Son funciones dentro del objeto. (cosas que puede hacer)
+*/
+
+let persona = {
+	nombre: 'Anderson',
+	edad: 25,
+	saludar: function(mensaje){
+		console.log(persona.nombre +'dice:' + mensaje);
+	}
+}
+
+console.log(persona.nombre);
+console.log(persona.edad);
+persona.saludar("Hola mundo");
+
+/*
+	Funciones anonimas
+	Las funciones anonimas son funciones sin nombre.
+*/
